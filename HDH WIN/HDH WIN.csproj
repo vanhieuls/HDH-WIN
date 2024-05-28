@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B556FFC0-3DEF-4D3C-993D-EAFEDCB613F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HDH_WIN</RootNamespace>
+    <AssemblyName>HDH WIN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngang2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dọc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dọc21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dọc22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ngang4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngang2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eo_circle_green_blank.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carorange1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cảpink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traffic-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traffic-light1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack - Copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road2Track.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RRRRRRRoadTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eo_circle_green_blank.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eo_circle_green_blank.svg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traffic-light2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
