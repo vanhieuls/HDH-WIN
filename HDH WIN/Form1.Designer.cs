@@ -116,8 +116,8 @@
             // 
             // carblue
             // 
-            this.carblue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.carblue.Image = ((System.Drawing.Image)(resources.GetObject("carblue.Image")));
+            this.carblue.BackColor = System.Drawing.Color.Transparent;
+            this.carblue.Image = global::HDH_WIN.Properties.Resources.car_removebg_preview;
             this.carblue.Location = new System.Drawing.Point(374, 493);
             this.carblue.Name = "carblue";
             this.carblue.Size = new System.Drawing.Size(54, 81);
@@ -176,8 +176,8 @@
             // 
             // carpink
             // 
-            this.carpink.BackColor = System.Drawing.SystemColors.Desktop;
-            this.carpink.Image = ((System.Drawing.Image)(resources.GetObject("carpink.Image")));
+            this.carpink.BackColor = System.Drawing.Color.Transparent;
+            this.carpink.Image = global::HDH_WIN.Properties.Resources.cảpink_removebg_preview;
             this.carpink.Location = new System.Drawing.Point(23, 216);
             this.carpink.Name = "carpink";
             this.carpink.Size = new System.Drawing.Size(100, 47);
