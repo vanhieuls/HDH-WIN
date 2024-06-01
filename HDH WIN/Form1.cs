@@ -107,11 +107,12 @@ namespace HDH_WIN
                     {
                         Do.Visible = false; Xanh.Visible = true;
                     }
-                    if (carpink.Left >= 320) { Do.Visible = true; Xanh.Visible = false; }
+                    if (carpink.Left >= 320) { Do.Visible = true; Xanh.Visible = false; tablepc0.Visible = false; tablepc1.Visible = true; }
                     if (carpink.Left >= 650)
                     {
                         Xanh.Visible = false;
                         Do.Visible = true;
+                        
                         GameOver1();
                     }
                     if (carpink.Left <= 140 || carblue.Top <= -150)
@@ -129,6 +130,8 @@ namespace HDH_WIN
                     {
                         Do1.Visible = true;
                         Xanh1.Visible = false;
+                        tablepc0.Visible = true; tablepc1.Visible = false;
+                    
                     }
                     if (carblue.Top <= -70)
                     {
@@ -164,7 +167,7 @@ namespace HDH_WIN
             Xanh1.Visible=false;
             Do.Visible=false;
             Xanh.Visible=false;
-         //   InitializeComponent();
+        //    InitializeComponent();
         }
         private void nopeterson_Click(object sender, EventArgs e)
         {
@@ -188,7 +191,7 @@ namespace HDH_WIN
         {
 
           //  DialogResult result = MessageBox.Show("Cả hai xe đều muốn vượt, bạn hãy ưu tiên chọn một xe!!!", "THONG BAO");
-            cnt = 1;
+            cnt = 0;
              flag[0] = true;
              flag[1] = true;
              process(cnt);
