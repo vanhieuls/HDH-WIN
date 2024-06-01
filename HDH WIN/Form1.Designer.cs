@@ -74,13 +74,13 @@
             // nopeterson
             // 
             this.nopeterson.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nopeterson.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nopeterson.ForeColor = System.Drawing.Color.OrangeRed;
+            this.nopeterson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nopeterson.ForeColor = System.Drawing.Color.Snow;
             this.nopeterson.Location = new System.Drawing.Point(0, 22);
             this.nopeterson.Name = "nopeterson";
             this.nopeterson.Size = new System.Drawing.Size(231, 59);
             this.nopeterson.TabIndex = 9;
-            this.nopeterson.Text = "CLICK";
+            this.nopeterson.Text = "Click";
             this.nopeterson.UseVisualStyleBackColor = false;
             this.nopeterson.Click += new System.EventHandler(this.nopeterson_Click);
             // 
@@ -88,7 +88,7 @@
             // 
             this.PCPink.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PCPink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PCPink.ForeColor = System.Drawing.Color.Fuchsia;
+            this.PCPink.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.PCPink.Location = new System.Drawing.Point(0, 72);
             this.PCPink.Name = "PCPink";
             this.PCPink.Size = new System.Drawing.Size(231, 62);
@@ -100,13 +100,13 @@
             // cahai
             // 
             this.cahai.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cahai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cahai.ForeColor = System.Drawing.Color.OrangeRed;
+            this.cahai.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cahai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cahai.Location = new System.Drawing.Point(0, 133);
             this.cahai.Name = "cahai";
-            this.cahai.Size = new System.Drawing.Size(231, 57);
+            this.cahai.Size = new System.Drawing.Size(231, 61);
             this.cahai.TabIndex = 15;
-            this.cahai.Text = "ALL";
+            this.cahai.Text = "PC0 and PC1";
             this.cahai.UseVisualStyleBackColor = false;
             this.cahai.Click += new System.EventHandler(this.cahai_Click_1);
             // 
@@ -114,7 +114,7 @@
             // 
             this.blue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blue.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.blue.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.blue.Location = new System.Drawing.Point(0, 18);
             this.blue.Name = "blue";
             this.blue.Size = new System.Drawing.Size(231, 59);
@@ -157,6 +157,7 @@
             this.Xanh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Xanh1.TabIndex = 13;
             this.Xanh1.TabStop = false;
+            this.Xanh1.Visible = false;
             // 
             // pictureBox6
             // 
@@ -202,6 +203,7 @@
             this.Xanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Xanh.TabIndex = 4;
             this.Xanh.TabStop = false;
+            this.Xanh.Visible = false;
             // 
             // Do
             // 
@@ -213,6 +215,7 @@
             this.Do.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Do.TabIndex = 3;
             this.Do.TabStop = false;
+            this.Do.Visible = false;
             // 
             // pictureBox3
             // 
@@ -297,10 +300,11 @@
             this.tablepc0.ForeColor = System.Drawing.Color.Crimson;
             this.tablepc0.Location = new System.Drawing.Point(495, 50);
             this.tablepc0.Name = "tablepc0";
-            this.tablepc0.Size = new System.Drawing.Size(161, 98);
+            this.tablepc0.Size = new System.Drawing.Size(175, 98);
             this.tablepc0.TabIndex = 26;
             this.tablepc0.Text = "PROCESS 0 (car pink)";
             this.tablepc0.UseVisualStyleBackColor = false;
+            this.tablepc0.Visible = false;
             // 
             // tablepc1
             // 
@@ -309,10 +313,11 @@
             this.tablepc1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.tablepc1.Location = new System.Drawing.Point(495, 50);
             this.tablepc1.Name = "tablepc1";
-            this.tablepc1.Size = new System.Drawing.Size(161, 98);
+            this.tablepc1.Size = new System.Drawing.Size(175, 98);
             this.tablepc1.TabIndex = 27;
             this.tablepc1.Text = "PROCESS 1 (car blue)";
             this.tablepc1.UseVisualStyleBackColor = false;
+            this.tablepc1.Visible = false;
             // 
             // groupBox1
             // 
@@ -322,7 +327,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.groupBox1.Location = new System.Drawing.Point(12, 306);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(231, 82);
+            this.groupBox1.Size = new System.Drawing.Size(231, 81);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DON\'T USE PETERSON";
@@ -335,9 +340,9 @@
             this.groupBox2.Controls.Add(this.cahai);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.groupBox2.Location = new System.Drawing.Point(12, 393);
+            this.groupBox2.Location = new System.Drawing.Point(12, 384);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(231, 191);
+            this.groupBox2.Size = new System.Drawing.Size(231, 200);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "USE PETERSON";
@@ -371,7 +376,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.SteelBlue;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Peterson Algorithm";
             this.TransparencyKey = System.Drawing.Color.Red;
             ((System.ComponentModel.ISupportInitialize)(this.carblue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Do1)).EndInit();

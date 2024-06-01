@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace HDH_WIN
 {
@@ -32,6 +34,7 @@ namespace HDH_WIN
             flag[1] = false;
             favor = 0;
         }
+        //thuat toan Peterson 
         private void process(int id)
         {
             do
@@ -115,7 +118,7 @@ namespace HDH_WIN
                         
                         GameOver1();
                     }
-                    if (carpink.Left <= 140 || carblue.Top <= -150)
+                    if (carpink.Left <= 140 || carblue.Top <= -50)
                     carpink.Left += speed;
                     carblue.Top -= speed;
                 }
@@ -138,7 +141,7 @@ namespace HDH_WIN
                         GameOver1();
                     }
                     carpink.Left += speed;
-                    if (carblue.Top >= 200 || carpink.Left >= 650)
+                    if (carblue.Top >= 200 || carpink.Left >=400)
                     carblue.Top -= speed;
                 }
 
@@ -155,19 +158,16 @@ namespace HDH_WIN
             Bum.Visible = true;
 
             MessageBox.Show("HAI XE DA CHAM NHAU","THONG BAO",MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            Bum.Visible = false;
+            this.Controls.Clear();
+            InitializeComponent();
         }
         private void GameOver1()
         {
 
             GameTimer.Stop();
             MessageBox.Show("DA CHAY XONG", "THONG BAO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Do1.Visible=false;
-            Xanh1.Visible=false;
-            Do.Visible=false;
-            Xanh.Visible=false;
-        //    InitializeComponent();
+            this.Controls.Clear();
+            InitializeComponent();
         }
         private void nopeterson_Click(object sender, EventArgs e)
         {
@@ -191,11 +191,10 @@ namespace HDH_WIN
         {
 
           //  DialogResult result = MessageBox.Show("Cả hai xe đều muốn vượt, bạn hãy ưu tiên chọn một xe!!!", "THONG BAO");
-            cnt = 0;
+            cnt = 1;
              flag[0] = true;
              flag[1] = true;
              process(cnt);
         }
-       
     }
 }
