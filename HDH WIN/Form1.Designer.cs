@@ -49,6 +49,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tablepc0 = new System.Windows.Forms.Button();
+            this.tablepc1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.carblue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Do1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xanh1)).BeginInit();
@@ -58,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Do)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // GameTimer
@@ -68,10 +74,13 @@
             // nopeterson
             // 
             this.nopeterson.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nopeterson.Location = new System.Drawing.Point(48, 338);
+            this.nopeterson.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nopeterson.ForeColor = System.Drawing.Color.OrangeRed;
+            this.nopeterson.Location = new System.Drawing.Point(0, 22);
             this.nopeterson.Name = "nopeterson";
-            this.nopeterson.Size = new System.Drawing.Size(153, 39);
+            this.nopeterson.Size = new System.Drawing.Size(231, 59);
             this.nopeterson.TabIndex = 9;
+            this.nopeterson.Text = "CLICK";
             this.nopeterson.UseVisualStyleBackColor = false;
             this.nopeterson.Click += new System.EventHandler(this.nopeterson_Click);
             // 
@@ -80,9 +89,9 @@
             this.PCPink.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PCPink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PCPink.ForeColor = System.Drawing.Color.Fuchsia;
-            this.PCPink.Location = new System.Drawing.Point(48, 383);
+            this.PCPink.Location = new System.Drawing.Point(0, 72);
             this.PCPink.Name = "PCPink";
-            this.PCPink.Size = new System.Drawing.Size(153, 39);
+            this.PCPink.Size = new System.Drawing.Size(231, 62);
             this.PCPink.TabIndex = 10;
             this.PCPink.Text = "Car Pink (PC0)";
             this.PCPink.UseVisualStyleBackColor = false;
@@ -91,24 +100,24 @@
             // cahai
             // 
             this.cahai.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cahai.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cahai.ForeColor = System.Drawing.Color.Fuchsia;
-            this.cahai.Location = new System.Drawing.Point(48, 472);
+            this.cahai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cahai.ForeColor = System.Drawing.Color.OrangeRed;
+            this.cahai.Location = new System.Drawing.Point(0, 133);
             this.cahai.Name = "cahai";
-            this.cahai.Size = new System.Drawing.Size(153, 36);
+            this.cahai.Size = new System.Drawing.Size(231, 57);
             this.cahai.TabIndex = 15;
             this.cahai.Text = "ALL";
             this.cahai.UseVisualStyleBackColor = false;
-            this.cahai.Click += new System.EventHandler(this.button1_Click);
+            this.cahai.Click += new System.EventHandler(this.cahai_Click_1);
             // 
             // blue
             // 
             this.blue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blue.ForeColor = System.Drawing.Color.Fuchsia;
-            this.blue.Location = new System.Drawing.Point(48, 428);
+            this.blue.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.blue.Location = new System.Drawing.Point(0, 18);
             this.blue.Name = "blue";
-            this.blue.Size = new System.Drawing.Size(153, 38);
+            this.blue.Size = new System.Drawing.Size(231, 59);
             this.blue.TabIndex = 16;
             this.blue.Text = "Car Blue (PC1)";
             this.blue.UseVisualStyleBackColor = false;
@@ -148,7 +157,6 @@
             this.Xanh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Xanh1.TabIndex = 13;
             this.Xanh1.TabStop = false;
-            this.Xanh1.Click += new System.EventHandler(this.Xanh1_Click);
             // 
             // pictureBox6
             // 
@@ -165,14 +173,13 @@
             // 
             this.Bum.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Bum.Image = ((System.Drawing.Image)(resources.GetObject("Bum.Image")));
-            this.Bum.Location = new System.Drawing.Point(327, 175);
+            this.Bum.Location = new System.Drawing.Point(332, 175);
             this.Bum.Name = "Bum";
             this.Bum.Size = new System.Drawing.Size(118, 109);
             this.Bum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Bum.TabIndex = 11;
             this.Bum.TabStop = false;
             this.Bum.Visible = false;
-            this.Bum.Click += new System.EventHandler(this.Bum_Click);
             // 
             // carpink
             // 
@@ -230,7 +237,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Critical Region";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -284,6 +290,58 @@
             this.label5.Text = "NonCritical Region";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tablepc0
+            // 
+            this.tablepc0.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tablepc0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tablepc0.ForeColor = System.Drawing.Color.Crimson;
+            this.tablepc0.Location = new System.Drawing.Point(495, 50);
+            this.tablepc0.Name = "tablepc0";
+            this.tablepc0.Size = new System.Drawing.Size(161, 98);
+            this.tablepc0.TabIndex = 26;
+            this.tablepc0.Text = "PROCESS 0 (car pink)";
+            this.tablepc0.UseVisualStyleBackColor = false;
+            // 
+            // tablepc1
+            // 
+            this.tablepc1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tablepc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tablepc1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.tablepc1.Location = new System.Drawing.Point(495, 50);
+            this.tablepc1.Name = "tablepc1";
+            this.tablepc1.Size = new System.Drawing.Size(161, 98);
+            this.tablepc1.TabIndex = 27;
+            this.tablepc1.Text = "PROCESS 1 (car blue)";
+            this.tablepc1.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.nopeterson);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.groupBox1.Location = new System.Drawing.Point(12, 306);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(231, 82);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "DON\'T USE PETERSON";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Controls.Add(this.blue);
+            this.groupBox2.Controls.Add(this.PCPink);
+            this.groupBox2.Controls.Add(this.cahai);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.groupBox2.Location = new System.Drawing.Point(12, 393);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(231, 191);
+            this.groupBox2.TabIndex = 29;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "USE PETERSON";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -292,15 +350,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(801, 586);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.tablepc1);
+            this.Controls.Add(this.tablepc0);
             this.Controls.Add(this.carblue);
-            this.Controls.Add(this.blue);
-            this.Controls.Add(this.cahai);
             this.Controls.Add(this.Do1);
             this.Controls.Add(this.Xanh1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.Bum);
-            this.Controls.Add(this.PCPink);
-            this.Controls.Add(this.nopeterson);
             this.Controls.Add(this.carpink);
             this.Controls.Add(this.Xanh);
             this.Controls.Add(this.Do);
@@ -324,6 +382,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Do)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,6 +408,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button tablepc0;
+        private System.Windows.Forms.Button tablepc1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 
